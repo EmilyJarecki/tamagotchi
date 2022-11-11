@@ -105,6 +105,22 @@ startTimer.addEventListener("click", playUp)
 
 
 /////////////AGE//////////////
+let ageInput = document.getElementById("age_input")
+let ageSubmit = document.getElementById("age_submit")
+
+console.log(ageSubmit)
+console.log(ageInput.textContent)
+
+function reflectAge(age){
+    ageInput.textContent = age
+}
+
+
+
+ageSubmit.addEventListener("click", reflectAge)
+
+
+
 // const userInput = document.getElementById("age_input")
 // const submitBtn = document.getElementById("age_submit")
 
