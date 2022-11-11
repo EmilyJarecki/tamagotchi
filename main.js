@@ -43,7 +43,10 @@ function hungerUp () {
 }
 
 feedBtn.addEventListener("click", function(){
-    hungerLevel(num--)
+    if (num>0){
+        hungerLevel(num--) 
+    }
+
 })
 
 
@@ -68,7 +71,9 @@ function sleepUp () {
     }, 2000) 
 }
 sleepBtn.addEventListener("click", function(){
-    sleepLevel(sleepNum--)
+    if(sleepNum > 0){
+        sleepLevel(sleepNum--)
+    }
 })
 startTimer.addEventListener("click", sleepUp)
 //////////BOREDOM///////
@@ -91,6 +96,33 @@ function playUp () {
     }, 2000) 
 }
 playBtn.addEventListener("click", function(){
-    playLevel(playNum--)
+    if (playNum > 0){
+        playLevel(playNum--)
+    }
+    
 })
 startTimer.addEventListener("click", playUp)
+
+
+/////////////AGE//////////////
+// const userInput = document.getElementById("age_input")
+// const submitBtn = document.getElementById("age_submit")
+
+// userInput.addEventListener("click", (e) => {
+//     let age
+// }
+
+// let petAge = Number(userInput.textContent)
+
+// function reflectAge(age){
+//     userInput.textContent = age
+//     console.log(userInput.textContent)
+// }
+
+
+
+
+// ageSubmit.addEventListener("click", function(e){
+//     e.preventDefault()
+
+// })
