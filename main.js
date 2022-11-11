@@ -32,17 +32,43 @@ function hungerLevel(num) {
     hungerMetric.textContent = num
 }
 
-function countUp () {
+function hungerUp () {
     let timerID = setInterval(()=>{
         num++
         hungerLevel(num)
         if (num >= 10){
             clearInterval(timerID)
         }
-    }, 500) 
+    }, 3000) 
 }
+
 feedBtn.addEventListener("click", function(){
     hungerLevel(num--)
 })
 
-startTimer.addEventListener("click", countUp)
+
+startTimer.addEventListener("click", hungerUp)
+///////////SLEEP///////////////
+const sleepMetric = document.getElementById("sleep_metric")
+const sleepBtn = document.getElementById("sleep")
+
+let sleepNum = Number(sleepMetric.textContent)
+
+function sleepLevel(sleepNum){
+    sleepMetric.textContent = sleepNum
+}
+
+function sleepUp () {
+    let sTimerID = setInterval(()=>{
+        sleepNum++
+        sleepLevel(sleepNum)
+        if (sleepNum >= 10){
+            clearInterval(sTimerID)
+        }
+    }, 2000) 
+}
+sleepBtn.addEventListener("click", function(){
+    sleepLevel(sleepNum--)
+})
+startTimer.addEventListener("click", sleepUp)
+//////////BOREDOM///////
