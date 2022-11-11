@@ -72,3 +72,25 @@ sleepBtn.addEventListener("click", function(){
 })
 startTimer.addEventListener("click", sleepUp)
 //////////BOREDOM///////
+const playMetric = document.getElementById("bored_metric")
+const playBtn = document.getElementById("play")
+
+let playNum = Number(playMetric.textContent)
+
+function playLevel(playNum){
+    playMetric.textContent = playNum
+}
+
+function playUp () {
+    let pTimerID = setInterval(()=>{
+        playNum++
+        playLevel(playNum)
+        if (playNum >= 10){
+            clearInterval(pTimerID)
+        }
+    }, 2000) 
+}
+playBtn.addEventListener("click", function(){
+    playLevel(playNum--)
+})
+startTimer.addEventListener("click", playUp)
