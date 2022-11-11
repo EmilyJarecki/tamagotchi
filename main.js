@@ -26,7 +26,6 @@ document.querySelector("#reset").addEventListener("click", reset)
 const hungerMetric = document.getElementById("hunger_metric")
 const getHungryBtn = document.getElementById("feed")
 
-
 let num = Number(hungerMetric.textContent)
 
 function hungerLevel(num) {
