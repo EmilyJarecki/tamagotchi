@@ -46,4 +46,3 @@ feedBtn.addEventListener("click", function(){
 })
 
 startTimer.addEventListener("click", countUp)
-
