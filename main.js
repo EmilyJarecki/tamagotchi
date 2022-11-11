@@ -22,9 +22,9 @@ startTimer.addEventListener("click", function(){
 })
 document.querySelector("#reset").addEventListener("click", reset)
 
-///////////////////////////////////////////////////
+///////////HUNGER////////////////////////////////////////
 const hungerMetric = document.getElementById("hunger_metric")
-const getHungryBtn = document.getElementById("feed")
+const feedBtn = document.getElementById("feed")
 
 let num = Number(hungerMetric.textContent)
 
@@ -38,9 +38,12 @@ function countUp () {
         hungerLevel(num)
         if (num >= 10){
             clearInterval(timerID)
-            alert("I'm dead")
         }
-    }, 2000) 
+    }, 500) 
 }
+feedBtn.addEventListener("click", function(){
+    hungerLevel(num--)
+})
 
 startTimer.addEventListener("click", countUp)
+
