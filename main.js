@@ -18,6 +18,7 @@ function reset() {
   clearInterval(hungerInterval)
   clearInterval(sleepInterval)
   clearInterval(playInterval)
+  clearInterval(ageInterval)
   tick.textContent = 0
   startTimer.disabled = false
 }
@@ -123,11 +124,12 @@ function fun1(){
 }
 console.log(output.innerHTML)
 
-function growAge(){
-    setInterval(() =>{
+startTimer.addEventListener("click", function(){
+    ageInterval = setInterval(() => {
         output.innerHTML++
     }, 7000)
-}
+})
+
 
 ageBtn.addEventListener("click", fun1)
-startTimer.addEventListener("click", growAge)
+
