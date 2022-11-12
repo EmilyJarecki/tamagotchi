@@ -19,7 +19,10 @@ function reset() {
   clearInterval(sleepInterval)
   clearInterval(playInterval)
   clearInterval(ageInterval)
+  hungerMetric.textContent = 0
   tick.textContent = 0
+  sleepMetric.textContent = 0
+  playMetric.textContent = 0
   startTimer.disabled = false
 }
 
@@ -53,7 +56,7 @@ startTimer.addEventListener("click", function(){
       if (num>=10){
         reset()
       }
-    }, 3000)
+    }, 1000)
   })
 
 feedBtn.addEventListener("click", function(){
@@ -104,7 +107,7 @@ startTimer.addEventListener("click", function(){
         if (playNum>=10){
             reset()
         }
-    }, 3000)
+    }, 500)
 })
 
 
@@ -132,4 +135,3 @@ startTimer.addEventListener("click", function(){
 
 
 ageBtn.addEventListener("click", fun1)
-
