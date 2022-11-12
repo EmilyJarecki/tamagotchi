@@ -55,6 +55,7 @@ startTimer.addEventListener("click", function(){
       hungerLevel(num)
       if (num>=10){
         reset()
+        document.querySelector(".lion_tamagotchi").textContent = "💀"
       }
     }, 1000)
   })
@@ -82,6 +83,7 @@ startTimer.addEventListener("click", function(){
         sleepLevel(sleepNum)
         if(sleepNum>=10){
             reset()
+            document.querySelector(".lion_tamagotchi").textContent = "💀"
         }
     }, 2000)
 })
@@ -106,6 +108,8 @@ startTimer.addEventListener("click", function(){
         playLevel(playNum)
         if (playNum>=10){
             reset()
+            document.querySelector(".lion_tamagotchi").textContent = "💀"
+            console.log("You've lost")
         }
     }, 500)
 })
@@ -122,7 +126,7 @@ const txt1 = document.getElementById("tbuser")
 const ageBtn = document.getElementById("submit_age")
 const output = document.getElementById("output1")
 
-function fun1(){
+function age(){
     output.innerHTML = txt1.value
 }
 console.log(output.innerHTML)
@@ -133,5 +137,6 @@ startTimer.addEventListener("click", function(){
     }, 7000)
 })
 
+ageBtn.addEventListener("click", age)
 
-ageBtn.addEventListener("click", fun1)
+
