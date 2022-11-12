@@ -1,3 +1,22 @@
+/////////////NAME///////////////////
+const nameText = document.getElementById("name")
+const nameBtn = document.getElementById("submit_name")
+const named = document.getElementById("named")
+
+function insertName(){
+    named.innerHTML = nameText.value
+}
+
+
+nameBtn.addEventListener("click", insertName)
+
+
+
+
+
+
+
+
 //////////////TIMER///////////////////////////////
 const tick = document.querySelector("#timerCount");
 const startTimer = document.querySelector("#startTimer");
