@@ -95,50 +95,27 @@ function playUp () {
         }
     }, 2000) 
 }
+
+
 playBtn.addEventListener("click", function(){
     if (playNum > 0){
         playLevel(playNum--)
     }
-    
 })
+
+
 startTimer.addEventListener("click", playUp)
 
 
 /////////////AGE//////////////
-let ageInput = document.getElementById("age_input")
-let ageSubmit = document.getElementById("age_submit")
+const txt1 = document.getElementById("tbuser")
+const ageBtn = document.getElementById("submit_age")
+const out1 = document.getElementById("output1")
 
-console.log(ageSubmit)
-console.log(ageInput.textContent)
-
-function reflectAge(age){
-    ageInput.textContent = age
+function fun1(){
+    out1.innerHTML = txt1.value
+    age = out1.innerHTML
 }
 
 
-
-ageSubmit.addEventListener("click", reflectAge)
-
-
-
-// const userInput = document.getElementById("age_input")
-// const submitBtn = document.getElementById("age_submit")
-
-// userInput.addEventListener("click", (e) => {
-//     let age
-// }
-
-// let petAge = Number(userInput.textContent)
-
-// function reflectAge(age){
-//     userInput.textContent = age
-//     console.log(userInput.textContent)
-// }
-
-
-
-
-// ageSubmit.addEventListener("click", function(e){
-//     e.preventDefault()
-
-// })
+ageBtn.addEventListener("click", fun1)
