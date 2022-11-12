@@ -15,7 +15,9 @@ const startTimer = document.querySelector("#startTimer");
 
 function reset() {
   clearInterval(interval)
-  clearInterval(timerID)
+  clearInterval(hungerInterval)
+  clearInterval(sleepInterval)
+  clearInterval(playInterval)
   tick.textContent = 0
   startTimer.disabled = false
 }
@@ -44,7 +46,7 @@ function hungerLevel(num) {
     hungerMetric.textContent = num
 }
 startTimer.addEventListener("click", function(){
-    timerID = setInterval(() => {
+    hungerInterval = setInterval(() => {
       num++
       hungerLevel(num)
       if (num>=10){
@@ -70,21 +72,21 @@ function sleepLevel(sleepNum){
     sleepMetric.textContent = sleepNum
 }
 
-function sleepUp () {
-    let sTimerID = setInterval(()=>{
+startTimer.addEventListener("click", function(){
+    sleepInterval = setInterval(() => {
         sleepNum++
         sleepLevel(sleepNum)
-        if (sleepNum >= 10){
-            clearInterval(sTimerID)
+        if(sleepNum>=10){
+            reset()
         }
-    }, 2000) 
-}
+    }, 2000)
+})
+
 sleepBtn.addEventListener("click", function(){
     if(sleepNum > 0){
         sleepLevel(sleepNum--)
     }
 })
-startTimer.addEventListener("click", sleepUp)
 //////////BOREDOM///////
 const playMetric = document.getElementById("bored_metric")
 const playBtn = document.getElementById("play")
@@ -94,16 +96,15 @@ let playNum = Number(playMetric.textContent)
 function playLevel(playNum){
     playMetric.textContent = playNum
 }
-
-function playUp () {
-    let pTimerID = setInterval(()=>{
+startTimer.addEventListener("click", function(){
+    playInterval = setInterval(() => {
         playNum++
         playLevel(playNum)
-        if (playNum >= 10){
-            clearInterval(pTimerID)
+        if (playNum>=10){
+            reset()
         }
-    }, 2000) 
-}
+    }, 3000)
+})
 
 
 playBtn.addEventListener("click", function(){
@@ -111,10 +112,6 @@ playBtn.addEventListener("click", function(){
         playLevel(playNum--)
     }
 })
-
-
-startTimer.addEventListener("click", playUp)
-
 
 /////////////AGE//////////////
 const txt1 = document.getElementById("tbuser")
