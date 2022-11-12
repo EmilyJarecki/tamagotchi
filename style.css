@@ -8,9 +8,14 @@ h1 {
 }
 body {
     font-family: 'Fjalla One', sans-serif;
-    background-color: lightskyblue;
+    background-color: whitesmoke;
     text-align: center;
-    background: linear-gradient(black)
+    background-image: url(https://64.media.tumblr.com/010c46067b29b710ce9a508fb4171dfb/tumblr_inline_n1ubnjJXdz1qmvw6b.gif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:white;
 }
 button {
     background-color: white;
@@ -36,9 +41,5 @@ p {
 }
 
 #age_section {
-    background-color: bisque;
-}
 
-#time_section {
-    background-color: bisque;
 }
