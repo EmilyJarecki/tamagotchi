@@ -13,17 +13,17 @@
 <body>
     <h1>Tamagotchi</h1>
     <h2>Name your Pet</h2>
-        <p id="named"></p>
+        <p id="named">Hello, what's your name?</p>
+        <form>
         <input type="text" id="name">
-        <input type="button" id="submit_name" value="Submit Name">
-          <section>
-            <p>Timer: <span id="timerCount">0</span></p>
-            <button id="startTimer">Start</button>
-            <button id="reset">Reset</button>
-          </section>
+        <input type="button" id="submit_name" onclick="form.style.display='none'" value="Submit Name">
+        </form>  
+            <section>
+                <p>Timer: <span id="timerCount">0</span></p>
+                <button id="startTimer">Start</button>
+                <button id="reset">Reset</button>
+            </section>
         
-
-
         <h2 class="lion_tamagotchi">🦁</h2>
         <h2 class="levels">Levels</h2>
             <section>
@@ -32,9 +32,9 @@
                     <p>Sleepiness: <span id="sleep_metric">0</span></p>
                     <p>Boredom: <span id="bored_metric">0</span></p>
                 </div>
-            <button id="feed">Feed your pet</button>
-            <button id="sleep">Turn off light</button>
-            <button id="play">Play with pet</button>
+                <button id="feed">Feed your pet</button>
+                <button id="sleep">Turn off light</button>
+                <button id="play">Play with pet</button>
             </section>
 
             <section>
