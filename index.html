@@ -12,8 +12,8 @@
 
 <body>
     <h1>Tamagotchi</h1>
-    <h2>Name your Pet</h2>
-        <p id="named">Hello, what's your name?</p>
+    <hr>
+    <h2 id="named">Name your Pet</h2>
         <form>
         <input type="text" id="name">
         <input type="button" id="submit_name" onclick="form.style.display='none'" value="Submit Name">
@@ -23,7 +23,16 @@
                 <button id="startTimer">Start</button>
                 <button id="reset">Reset</button>
             </section>
-        
+            <hr>
+            <section>
+                <h3>Age</h3>
+                <p class="output" id="output1"></p>
+                <form>
+                <input type="number" id="tbuser">
+                <input type="button" id="submit_age" onclick="form.style.display='none'" value="Submit Age">
+                </form>
+            </section>
+            <hr>
         <h2 class="lion_tamagotchi">🦁</h2>
         <h2 class="levels">Levels</h2>
             <section>
@@ -36,22 +45,6 @@
                 <button id="sleep">Turn off light</button>
                 <button id="play">Play with pet</button>
             </section>
-
-            <section>
-                <h3>Age</h3>
-                <p class="output" id="output1"></p>
-                <form>
-                <input type="number" id="tbuser">
-                <input type="button" id="submit_age" onclick="form.style.display='none'" value="Submit Age">
-                </form>
-            </section>
-      
-
-    
-
-
-
-
 
 </body>
 </html>
