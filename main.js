@@ -7,15 +7,7 @@ function insertName(){
     named.innerHTML = nameText.value
 }
 
-
 nameBtn.addEventListener("click", insertName)
-
-
-
-
-
-
-
 
 //////////////TIMER///////////////////////////////
 const tick = document.querySelector("#timerCount");
@@ -23,6 +15,7 @@ const startTimer = document.querySelector("#startTimer");
 
 function reset() {
   clearInterval(interval)
+  clearInterval(timerID)
   tick.textContent = 0
   startTimer.disabled = false
 }
@@ -50,26 +43,23 @@ let num = Number(hungerMetric.textContent)
 function hungerLevel(num) {
     hungerMetric.textContent = num
 }
-
-function hungerUp () {
-    let timerID = setInterval(()=>{
-        num++
-        hungerLevel(num)
-        if (num >= 10){
-            clearInterval(timerID)
-        }
-    }, 3000) 
-}
+startTimer.addEventListener("click", function(){
+    timerID = setInterval(() => {
+      num++
+      hungerLevel(num)
+      if (num>=10){
+        reset()
+      }
+    }, 3000)
+  })
 
 feedBtn.addEventListener("click", function(){
     if (num>0){
         hungerLevel(num--) 
     }
-
 })
 
-
-startTimer.addEventListener("click", hungerUp)
+// startTimer.addEventListener("click", hungerUp)
 ///////////SLEEP///////////////
 const sleepMetric = document.getElementById("sleep_metric")
 const sleepBtn = document.getElementById("sleep")
