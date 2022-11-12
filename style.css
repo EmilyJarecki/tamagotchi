@@ -27,6 +27,7 @@ p {
     background-color: blueviolet;
     border-radius: 50%;
     margin: 10px;
+    font-family: 'Fjalla One', sans-serif;
 }
 .btnLabel {
     color:red;
@@ -34,6 +35,10 @@ p {
     justify-content: center;
 }
 
-#startTimer {
+#age_section {
+    background-color: bisque;
+}
 
+#time_section {
+    background-color: bisque;
 }

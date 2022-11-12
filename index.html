@@ -14,27 +14,24 @@
 <body>
     <h1>Tamagotchi</h1>
     <hr>
-    <h2 id="named">Name your Pet</h2>
+    <h2 id="named">______</h2>
         <form>
         <input type="text" id="name">
         <input type="button" id="submit_name" onclick="form.style.display='none'" value="Submit Name">
         </form>  
         <hr>
-            <section>
-                <p>Timer: <span id="timerCount">0</span></p>
-                <button id="startTimer">Start</button>
-                <button id="reset">Reset</button>
-            </section>
-            <hr>
             <section id="age_section">
-                <h3>Age</h3>
+                <h3>Age:</h3>
                 <p class="output" id="output1"></p>
                 <form>
                 <input type="number" id="tbuser">
                 <input type="button" id="submit_age" onclick="form.style.display='none'" value="Submit Age">
                 </form>
-            </section>
-            <hr>
+            </section>  
+
+
+        <hr>
+
         <h2 class="lion_tamagotchi">🦁</h2>
         <h2 class="levels">Levels</h2>
             <section>
@@ -43,13 +40,17 @@
                     <p>Sleepiness: <span id="sleep_metric">0</span></p>
                     <p>Boredom: <span id="bored_metric">0</span></p>
                 </div>
-                <!-- <p class="btnLabel">Feed</p>
-                <p class="btnLabel">Sleep</p>
-                <p class="btnLabel">Play</p> -->
-                <button class="levelBtn" id="feed">Feed your pet</button>
-                <button class="levelBtn" id="sleep">Turn off light</button>
-                <button class="levelBtn" id="play">Play with pet</button>
+                <button class="levelBtn" id="feed">Feed</button>
+                <button class="levelBtn" id="sleep">Lights Out</button>
+                <button class="levelBtn" id="play">Play</button>
             </section>
+            <section id="time_section">
+                <p>Timer: <span id="timerCount">0</span></p>
+                <button id="startTimer">Start</button>
+                <button id="reset">Reset</button>
+            </section>
+
+
 
 </body>
 </html>
