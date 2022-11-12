@@ -1,22 +1,39 @@
 h1 {
-    color: blue
+    color: blue;
+    font-family: 'Roboto Slab', serif;
 }
 .lion_tamagotchi {
     font-size: 100px;
     margin: 0
 }
 body {
+    font-family: 'Fjalla One', sans-serif;
     background-color: lightskyblue;
     text-align: center;
+    background: linear-gradient(black)
 }
 button {
     background-color: white;
 }
 p {
     font-size: large;
-    color: blue
-}
-.levels {
-
+    color: blueviolet
 }
 
+.levelBtn {
+    color: white;
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    margin: 10px;
+}
+.btnLabel {
+    color:red;
+    display: flex;
+    justify-content: center;
+}
+
+#startTimer {
+
+}
