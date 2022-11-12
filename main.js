@@ -110,12 +110,18 @@ startTimer.addEventListener("click", playUp)
 /////////////AGE//////////////
 const txt1 = document.getElementById("tbuser")
 const ageBtn = document.getElementById("submit_age")
-const out1 = document.getElementById("output1")
+const output = document.getElementById("output1")
 
 function fun1(){
-    out1.innerHTML = txt1.value
-    age = out1.innerHTML
+    output.innerHTML = txt1.value
+}
+console.log(output.innerHTML)
+
+function growAge(){
+    setInterval(() =>{
+        output.innerHTML++
+    }, 7000)
 }
 
-
 ageBtn.addEventListener("click", fun1)
+startTimer.addEventListener("click", growAge)
