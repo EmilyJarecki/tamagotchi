@@ -3,7 +3,7 @@
     color: white
 }
 .lion_tamagotchi {
-    font-size: 100px;
+    font-size: 150px;
     margin: 0
 }
 body {
@@ -39,6 +39,7 @@ h3{
     width: 70px;
     background-color: green;
     border-radius: 50%;
+    border-color: white;
     font-size: medium;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -51,7 +52,7 @@ h3{
 .submitBtn {
     background-color: transparent;
     color: white;
-    border-color: goldenrod;
+    border-color: white;
     border-radius: 7px;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -63,9 +64,10 @@ h3{
     border-radius: 7px;
     height: 20px;
 }
-.levels {
+.levels_title {
     text-decoration: underline;
     color: white;
+    font-size: 30px;
 }
 .main{
     color:white;
@@ -87,3 +89,10 @@ div {
     border-radius: 50%;
     background:rgb(79, 28, 173);
   }
+.level {
+    font-size: 20px;
+    margin: 5px 
+}
+#time_section{
+    font-size: 25px
+}
