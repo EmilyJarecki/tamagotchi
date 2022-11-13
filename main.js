@@ -110,7 +110,6 @@ startTimer.addEventListener("click", function(){
         if (playNum>=10){
             reset()
             document.querySelector(".lion_tamagotchi").textContent = "💀"
-            console.log("You've lost")
         }
     }, 2000)
 })
@@ -130,7 +129,6 @@ const output = document.getElementById("output1")
 function age(){
     output.innerHTML = txt1.value
 }
-console.log(output.innerHTML)
 
 startTimer.addEventListener("click", function(){
     ageInterval = setInterval(() => {
@@ -139,5 +137,3 @@ startTimer.addEventListener("click", function(){
 })
 
 ageBtn.addEventListener("click", age)
-
-

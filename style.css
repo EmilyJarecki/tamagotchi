@@ -65,7 +65,7 @@ h3{
 }
 .levels {
     text-decoration: underline;
-    color: white
+    color: white;
 }
 .main{
     color:white;
@@ -77,3 +77,13 @@ h3{
 p {
     color: white
 }
+div {
+    width: 320px;
+    padding: 10px;
+    border: 3px solid white;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 50%;
+    background:rgb(79, 28, 173);
+  }
