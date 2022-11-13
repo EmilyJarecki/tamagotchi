@@ -23,6 +23,7 @@ function reset() {
   tick.textContent = 0
   sleepMetric.textContent = 0
   playMetric.textContent = 0
+  output.innerHTML=0
   startTimer.disabled = false
 }
 
@@ -111,7 +112,7 @@ startTimer.addEventListener("click", function(){
             document.querySelector(".lion_tamagotchi").textContent = "💀"
             console.log("You've lost")
         }
-    }, 500)
+    }, 2000)
 })
 
 
@@ -134,7 +135,7 @@ console.log(output.innerHTML)
 startTimer.addEventListener("click", function(){
     ageInterval = setInterval(() => {
         output.innerHTML++
-    }, 7000)
+    }, 6000)
 })
 
 ageBtn.addEventListener("click", age)
