@@ -12,7 +12,7 @@
 
 
 <body>                
-
+<nav>
     <h2 id="named">What's your name?</h2>
         <form>
         <input class="spaceToInput" type="text" id="name">
@@ -26,9 +26,13 @@
                 <input class="submitBtn" type="button" id="submit_age" onclick="form.style.display='none'" value="Submit Age">
                 </form>
             </section>  
-            <p></p>
+</nav>            
     <button id="startTimer">Start</button>
     <button id="reset">Reset</button>
+            <section id="time_section">
+                <p id="timer">Timer: <span id="timerCount">0</span></p>
+
+            </section>    
         <h2 class="lion_tamagotchi">🦁</h2>
     <div>
         <h2 class="levels_title">Levels</h2>
@@ -39,10 +43,7 @@
                 <button class="levelBtn" id="sleep">Lights Out</button>
                 <button class="levelBtn" id="play">Play</button>
     </div>        
-            <section id="time_section">
-                <p>Timer: <span id="timerCount">0</span></p>
 
-            </section>
 
 
 

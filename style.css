@@ -4,7 +4,7 @@
 }
 .lion_tamagotchi {
     font-size: 150px;
-    margin: 0
+    margin: 15px 0 15px 0
 }
 body {
     font-family: 'Fjalla One', sans-serif;
@@ -19,18 +19,14 @@ h3{
 }
 .levelBtn {
     color: white;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-color: blueviolet;
-    border-color: white;
+    border-color: black;
     border-radius: 50%;
     margin: 10px;
     font-family: 'Fjalla One', sans-serif;
-}
-.btnLabel {
-    color:red;
-    display: flex;
-    justify-content: center;
+    font-size: 15px;
 }
 
 #startTimer {
@@ -42,6 +38,7 @@ h3{
     border-color: white;
     font-size: medium;
     font-family: 'Fjalla One', sans-serif;
+    margin: 30px 0 0 0;
 }
 #reset{
     background-color: white;
@@ -66,8 +63,9 @@ h3{
 }
 .levels_title {
     text-decoration: underline;
-    color: white;
+    color: black;
     font-size: 30px;
+    margin: 10px;
 }
 .main{
     color:white;
@@ -87,12 +85,23 @@ div {
     margin: 0 auto;
     width: 300px;
     border-radius: 50%;
-    background:rgb(79, 28, 173);
+    background:white;
   }
 .level {
-    font-size: 20px;
-    margin: 5px 
+    font-size: 30px;
+    margin: 0 auto;
+    color: black;
 }
-#time_section{
-    font-size: 25px
+#timer{
+    color: black;
+    font-size: 35px;
+    border: 7px solid black;
+    height: 45px;
+    margin: 0 auto;
+    width: 140px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    bottom: 50px;
+    background-color: white;
 }
