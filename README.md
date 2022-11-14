@@ -1,6 +1,5 @@
 # tamagotchi
 Wireframe:(https://github.com/EmilyJarecki/tamagotchi/files/9998507/CamScanner.11-13-2022.16.53.pdf)
-Browser: file:///Users/emilyjarecki/SEI/projects/tamagotchi/index.html
 
 Purpose: to keep your pet alive for as long as possible. 
 
