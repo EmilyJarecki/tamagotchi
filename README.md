@@ -3,6 +3,10 @@ Wireframe:(https://github.com/EmilyJarecki/tamagotchi/files/9998507/CamScanner.1
 
 Purpose: to keep your pet alive for as long as possible. 
 
+Screenshots: 
+<img width="2236" alt="Screen Shot 2022-12-12 at 10 21 55 AM" src="https://user-images.githubusercontent.com/107048020/207098224-e39786f4-6bff-4a2c-8f01-79e341fb9453.png">
+
+
 User Story: 
 1. When the user inputs name then clicks "submit name", the input field and submit button disappear and only the name remains. 
 2. When the user inputs age then clicks "submit age", the input field and submit button disappear and only the age remains underneath an "age" label.
